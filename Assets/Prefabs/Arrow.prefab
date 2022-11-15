@@ -100,4 +100,4 @@ MonoBehaviour:
   speed: 10
   explosionRadio: 0
   impactEfect: {fileID: 7915097227276217016, guid: 963261bfa6a68dc4aa51c86a3e1d1a5b, type: 3}
-  damage: 0
+  startDamage: 20

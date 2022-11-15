@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ActiveButtom : MonoBehaviour
 {
    
-    public int bank;
+    public static int bank;
+    public int initialBank = 100;
     public Text bankText;
     public static ActiveButtom instance;
     public GameObject goblinOff;
@@ -17,18 +18,18 @@ public class ActiveButtom : MonoBehaviour
     public Button buttonMusthroom;
     public Button buttonSkeleton;
     public Button buttonEyeMonster;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-       
+    public GameManager gameManager;
+    PlayerStats playerStats;
+
+    private void Start()
+    {
+        bank = initialBank;
     }
 
-    // Update is called once per frame
     void Update()
     {
         bankText.text = bank.ToString();
-       
         ActivateGoblin();
         ActivateMusthroom();
         ActivateSkeleton();
