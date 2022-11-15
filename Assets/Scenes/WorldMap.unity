@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6ea2d1954fa01498028e8bc7724548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 20
+  startMoney: 40
   startLives: 3
   live1: {fileID: 1504340339}
   live2: {fileID: 1850796606}
@@ -3827,7 +3827,7 @@ MonoBehaviour:
     count: 40
     rate: 0.35
   spawnPoint: {fileID: 93169461}
-  timeBetweenWaves: 6
+  timeBetweenWaves: 15
   waveCountdownText: {fileID: 439384922}
   gamemanager: {fileID: 1450075186}
   sideSpawnMinY: -9
@@ -4378,6 +4378,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 439384922, guid: 8bd15002d9616a54089d3ad9fdc37dba, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190845590, guid: 8bd15002d9616a54089d3ad9fdc37dba, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1927700489088982328, guid: 8bd15002d9616a54089d3ad9fdc37dba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4576,7 +4584,7 @@ PrefabInstance:
       objectReference: {fileID: 1450075186}
     - target: {fileID: 1927700490510396179, guid: 8bd15002d9616a54089d3ad9fdc37dba, type: 3}
       propertyPath: initialBank
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bd15002d9616a54089d3ad9fdc37dba, type: 3}
