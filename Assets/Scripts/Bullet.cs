@@ -10,8 +10,14 @@ public class Bullet : MonoBehaviour
     public float explosionRadio;
     public GameObject impactEfect;
 
-    public int damage = 50;
+    public  static int damage;
 
+    public int startDamage = 10;
+
+    private void Start()
+    {
+        damage = startDamage;
+    }
     public void Seek(Transform _target)
     {
         target = _target;
@@ -55,8 +61,8 @@ public class Bullet : MonoBehaviour
 
     void Explode()
     {
-        Collider[] colliders1 = Physics.OverlapSphere(transform.position, explosionRadio);
-        foreach (Collider collider in colliders1)
+        Collider2D[] colliders2 = Physics2D.OverlapCircleAll(transform.position, explosionRadio);
+        foreach (Collider2D collider in colliders2)
         {
             if (collider.tag == "Enemy")
             {

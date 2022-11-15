@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  explosionRadio: 3
+  explosionRadio: 6
   impactEfect: {fileID: 7915097227276217016, guid: 27c379cff04eda6499bf10a6a01501dc, type: 3}
-  damage: 100
+  startDamage: 60
 --- !u!1 &8571918976818075418
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,10 +76,7 @@ public class Turret : MonoBehaviour
         if (!attaking)
         {
             anim.SetTrigger("Attaking");
-        }
-        
-
-        
+        }       
     }
 
     void OnDrawGizmosSelected()
