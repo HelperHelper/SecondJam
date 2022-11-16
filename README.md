@@ -1,2 +1,4 @@
 # Secondam
-Repository Project Survive Game Second Jam
+Repository Game Protect the magic tree 
+ 
+ 
